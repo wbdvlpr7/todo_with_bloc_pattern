@@ -1,0 +1,520 @@
+
+
+fluttercors --disable
+organize imports:  Alt+Shift+O
+
+flutterfire configure 
+
+https://github.com/firebase/firebase-ios-sdk
+***************************************************
+keytool -genkey -v -keystore D:\Projects\KEY\melak\Store\upload-keystore.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+
+https://www.favicon-generator.org/
+adb tcpip 5555
+adb connect 192.168.1.178:5555 
+adb connect 192.168.1.200:37431
+flutter build apk --release --split-per-abi --no-tree-shake-icons
+flutter build appbundle 
+flutter run -d chrome 
+flutter build web --release
+flutter build web --web-renderer html --release [auto-html-canvaskit]
+flutter run -d chrome --web-renderer html --profile
+flutter run -d chrome --release --dart-define=FLUTTER_WEB_USE_SKIA=true
+flutter clean 
+flutter build web --release
+
+flutter build web --web-renderer html --release --dart-define=FLUTTER_WEB_USE_SKIA=true
+flutter build apk --release --split-per-abi --obfuscate --split-debug-info=build/app/outputs/symbols
+
+chromium --force-device-scale-factor=1 
+
+
+flutter build appbundle --target-platform android-arm --analyze-size
+flutter build appbundle --target-platform android-arm64 --analyze-size
+flutter build appbundle --target-platform android-x64 --analyze-size
+flutter build apk --target-platform android-arm --analyze-size
+flutter build apk --target-platform android-arm64 --analyze-size
+flutter build apk --target-platform android-x64 --analyze-size
+flutter build ios --analyze-size
+flutter build linux --analyze-size
+flutter build windows --analyze-size
+flutter build macos --analyze-size
+//**********************************************************************************
+flutter build apk --obfuscate --split-debug-info=/<project-name>/<directory>
+
+
+dart pub global deactivate get_cli
+dart pub global activate get_cli 1.6.0
+
+get create project:baghland
+
+get create page:home
+get create controller:dialogcontroller on home
+get create view:contactUs on home
+get create provider:api on data
+
+get generate model on models with assets/models/language.json --skipProvider
+get generate model on models with assets/models/category.json --skipProvider
+get generate model on models with assets/models/word.json --skipProvider
+get generate model on models with assets/models/socialnetwork.json --skipProvider
+get generate model on models with assets/models/localelanguage.json --skipProvider
+get generate model on home from "https://api.github.com/users/CpdnCristiano"
+
+get generate model on models with assets/models/boxmo.json --skipProvider
+get generate model on models with assets/models/cardItemsSetting.json --skipProvider
+get generate model on models with assets/models/leitnerSettings.json --skipProvider
+
+
+get install build_runner --dev
+get install hive_generator --dev
+get install camera
+get install http path camera
+get install path:1.6.4
+get install flutter_launcher_icons --dev
+get remove http
+get remove http path
+get generate locales assets/locales
+
+pub global activate get_cli 
+flutter pub global activate get_cli
+get update
+get -v
+get help
+CAUTION! ->  get init
+
+
+
+
+
+***************************************************
+***************************************************
+get install build_runner hive_generator --dev
+material_floating_search_bar 
+cafebazaar_flutter
+zarinpal
+showcaseview 
+shimmer 
+auto_animated 
+rflutter_alert 
+
+firebase_core firebase_messaging
+***************************************************
+flutter create my_app
+flutter create -i objc -a java my_app
+
+cd my_app
+flutter analyze
+flutter test
+
+flutter clean
+flutter pub cache repair      -->  error: 'Flutter/Flutter.h' file not found when flutter run on iOS
+																	OR  :  The plugin app_settings could not be built due to the issue above.
+flutter run
+flutter run --release
+flutter run --profile
+flutter run --debug
+flutter run lib/main.dart
+flutter run -d chrome
+
+ --enable-asserts.  ??????? 
+
+flutter pub get
+flutter pub outdated
+flutter pub upgrade
+
+flutter --help --verbose
+flutter --version
+
+flutter channel
+flutter channel dev
+flutter channel stable
+flutter upgrade
+
+
+flutter --help --verbose
+
+flutter packages pub run build_runner build --delete-conflicting-outputs
+flutter pub run build_runner build --delete-conflicting-outputs
+flutter packages pub run build_runner watch
+-----------------------------------------------------------
+
+brew install cocoapods
+pod install
+
+*************************************
+flutter build apk --split-per-abi
+flutter build apk --release --split-per-abi
+flutter build apk --release --split-per-abi --no-tree-shake-icons
+flutter build apk --debug --split-per-abi
+flutter buuild web --web-renderer=html
+
+flutter pub run flutter_launcher_icons
+flutter pub run flutter_native_splash:create
+flutter pub run change_app_package_name:main com.behradsoft.med
+flutter pub run change_app_package_name:main com.tafreshplus.tplus
+flutter pub add flutter_blue
+
+
+-----------------------------------------------------------
+File system error(-2015294522).===>> Run:   wsreset.exe
+-----------------------------------------------------------
+easy_localization:
+flutter pub run easy_localization:generate --source-dir assets/langs
+-----------------------------------------------------------
+Gradle erroe:
+	flutter create bug
+gradle-wrapper.properties:
+distributionUrl=https\://services.gradle.org/distributions/gradle-6.1.1-all.zip
+-----------------------------------------------------------
+WiFi:
+	adb tcpip 5555
+	adb connect <device ip addr>:5555
+	adb devices
+-----------------------------------------------------------
+upgrade your project files to the latest flutter template by deleting the android and ios folders, and running flutter create .
+error:
+	Your Flutter application is created using an older version of the Android
+	embedding. It's being deprecated in favor of Android embedding v2. Follow the
+	steps at
+	https://flutter.dev/go/android-project-migration
+
+	soloution:
+	delete ios and android folder then : 
+	run:    "flutter create ."
+
+---------------------------------------------------------
+error:
+	The current Dart SDK version is 2.7.1.
+	Because bkeys requires SDK version >=2.12.0 <3.0.0, version solving failed
+
+soloution: 
+	flutter upgrade not work so upgrade dart manually 
+			for Windows user:
+				choco upgrade dart-sdk
+			for Mac users:
+				brew upgrade dart
+
+-----------------------------------------------------------
+Don't copy .packages over from one machine to another. (It should be in .gitignore if using git.)
+
+Instead, run flutter packages get on the mac, and it will recreate .packages.
+
+(Don't copy .flutter-plugins either.)
+-----------------------------------------------------------
+%windir%\System32\SndVol.exe -f 49825268
+-----------------------------------------------------------
+xmlhttprequest error flutter web:
+1- Go to flutter\bin\cache and remove a file named: flutter_tools.stamp
+2- Go to flutter\packages\flutter_tools\lib\src\web and open the file chrome.dart.
+3- Find '--disable-extensions',
+4- Add '--disable-web-security',
+***************************************************
+
+Set the MinimumOSversion to 10.0 in ios/Flutter/AppFrameworkInfo.plist
+Uncomment the #platform :iOS, '10.0' line in your ios/Podfile
+flutter clean \
+        && rm ios/Podfile.lock pubspec.lock \
+        && rm -rf ios/Pods ios/Runner.xcworkspace \
+        && flutter build ios
+
+
+flutter clean && \
+rm ios/Podfile.lock pubspec.lock && \
+rm -rf ios/Pods ios/Runner.xcworkspace && \ 
+flutter run
+
+
+flutter create .
+
+sudo gem update cocoapods --pre
+pod update
+clean
+build
+
+sudo gem uninstall --all
+sudo gem install -n /usr/local/bin cocoapods
+pod setup
+Ignoring ffi-1.15.4 because its extensions are not built. Try: gem pristine ffi --version 1.15.4
+sudo gem install ffi
+
+
+
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+get install get get_storage validators hive graphql_flutter shared_preferences cached_network_image flutter_launcher_icons url_launcher change_app_package_name flutter_easyloading hive_flutter font_awesome_flutter flutter_native_splash image_picker connectivity dio flutter_slidable animated_text_kit carousel_slider fl_chart flutter_spinkit auto_size_text flutter_staggered_grid_view file_picker flutter_swiper  pull_to_refresh  sliding_up_panel introduction_screen badges responsive_framework timeline_tile logger_flutter infinite_scroll_pagination percent_indicator supercharged expandable pin_code_fields getwidget flutter_typeahead device_preview google_fonts share_plus package_info_plus flutter_countdown_timer flutter_map flutter_map_location jwt_decoder faker mask_text_input_formatter sqflite path encrypt
+
+get install url_launcher change_app_package_name flutter_easyloading font_awesome_flutter image_picker connectivity carousel_slider flutter_slidable flutter_spinkit auto_size_text file_picker pull_to_refresh badges responsive_framework timeline_tile logger_flutter infinite_scroll_pagination percent_indicator supercharged expandable pin_code_fields getwidget flutter_typeahead device_preview google_fonts share_plus permission_handler package_info_plus flutter_countdown_timer mask_text_input_formatter zarinpal uni_links jwt_decoder flutter_launcher_icons flutter_native_splash flutter_html 
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+
+API COMMMANDS 
+
+netstat -o
+netsh interface ipv4 show excludedportrange protocol=tcp
+
+
+dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
+dotnet ef
+//***********************************************
+dotnet new sln --name solutionName
+dotnet new webapi -o projectName
+dotnet sln add projectName
+dotnet run
+//***********************************************
+
+dotnet new webapi -o firstapi
+
+cd firstapi
+
+dotnet add package Microsoft.AspNetCore.Mvc.Core
+dotnet add package Microsoft.AspNetCore.Http.Features
+dotnet add package EntityFramework
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+
+echo "appsettings.json">.gitignore
+echo "/obj">>.gitignore
+echo "/bin">>.gitignore
+
+dotnet dev-certs https --trust
+
+dotnet run
+
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add InitialCreate
+dotnet ef database update InitialCreate
+dotnet ef migrations remove InitialCreate
+
+"DbContextSettings": {
+    "ConnectionString": "User=sa;Password=isl@2750U;server=.\\sql2017;Database=firstdotnet;"
+  }
+  
+//***********************************************
+//***********************************************
+VSCODE Db First:
+  dotnet --version
+  dotnet tool install --global dotnet-ef
+  dotnet tool update --global dotnet-ef
+  dotnet ef
+
+
+  1-Crete new solution:
+    dotnet new sln --name TestApi
+    
+  2-Create Web Api project:
+    dotnet new webapi --name api
+    
+  3-Create new class library project:
+    dotnet new classlib --name Api.DB
+    
+  4-Add reference of this two project in solution:
+    dotnet sln "TestApi.sln" add "api/api.csproj"
+    dotnet sln "TestApi.sln" add "Api.DB/Api.DB.csproj"
+  
+  5-Add class library project reference in web api project(folder):
+    dotnet add reference ../Api.DB/Api.DB.csproj
+  
+  6-Add packages in Class library project:
+    dotnet add package Microsoft.EntityFrameworkCore
+    dotnet add package Microsoft.EntityFrameworkCore.Design
+    dotnet add package Microsoft.EntityFrameworkCore.Tools
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer.Design
+	dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+	dotnet add package Microsoft.AspNetCore.Mvc.ViewFeatures
+    
+    dotnet add package HotChocolate.AspNetCore
+    dotnet add package HotChocolate.AspNetCore.Playground
+    dotnet add package HotChocolate.Data
+    dotnet add package HotChocolate.Data.EntityFramework
+	
+	dotnet add package GraphQL
+	dotnet add package GraphQL.SystemTextJson
+	dotnet add package GraphQL.NewtonsoftJson
+
+    
+  7(just for class library)-Add this to Class library csproj file in seperate  <ItemGroup> section:
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3"/></ItemGroup>
+    
+  8-(just for class library)Add this to Class library csproj in <PropertyGroup> section:
+    <RuntimeFrameworkVersion>2.0.5</RuntimeFrameworkVersion>
+    
+  9-run:  
+    dotnet restore
+  10-And finally, run scaffold command:
+    dotnet ef dbcontext scaffold "server=.\sql2014;database=dbAdvertisement;user=sa;password=isl@2750U;" Microsoft.EntityFrameworkCore.SqlServer -o Models --force
+
+
+
+
+dotnet new mvc --name Adver
+dotnet aspnet-codegenerator controller -name ProvincesController --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries --readWriteActions
+dotnet aspnet-codegenerator view Index List -m Province -outDir Views\Provinces --useDefaultLayout --referenceScriptLibraries
+
+
+dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
+dotnet add package Microsoft.AspNetCore.Mvc.ViewFeatures
+dotnet add package bootstrap
+dotnet add package bower
+
+npm install -g bower
+bower install
+  
+
+
+
+//***********************************************
+
+docker info
+docker pull mcr.microsoft.com/mssql/server
+docker pull mcr.microsoft.com/mssql/server:2019-latest
+sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
+sudo docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=isl@2750U" \
+   -p 1433:1433 --name mssql2019 -h mssql2019 \
+   -d mcr.microsoft.com/mssql/server:2019-latest
+npm install -g sql-cli
+
+docker run -d -p 80:80 docker/getting-started
+***************************************************
+dotnet ef migrations add mig1
+dotnet ef migrations list
+
+dotnet ef database update mig1
+dotnet ef database drop mig1
+
+--------------------------
+dotnet --version
+dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
+dotnet new web -n projectName
+
+dotnet add ./Demo package HotChocolate.AspNetCore
+
+dotnet build
+dotnet run
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+-----------------------------
+-----------------------------
+Database First:isl@2750U
+dotnet ef dbcontext scaffold "server=.\mssql2019,1433;database=dbleitner;user=sa;password=isl@2750U;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+dotnet add package HotChocolate.AspNetCore
+dotnet add package HotChocolate.AspNetCore.Playground
+dotnet add package HotChocolate.Data
+dotnet add package HotChocolate.Data.EntityFramework
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+dotnet add package Microsoft.EntityFrameworkCore.Design
+-----------------------------
+VSCode First:
+dotnet add package EntityFramework
+dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL
+dotnet add package Microsoft.AspNetCore.Mvc.Core
+dotnet add package Microsoft.AspNetCore.Http.Features
+dotnet add package Microsoft.EntityFrameworkCore.Design
+-----------------------------
+dotnet add package Microsoft.EntityFrameworkCore.Design
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package HotChocolate.AspNetCore
+dotnet add package HotChocolate.Data.EntityFramework
+dotnet add package GraphQL.Server.Ui.Voyager --version 5.0.2
+------------------------
+***************************************************
+GIT
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+ls -la              ->  show directory content
+vim .zshrc      -> open file .zshrc on vim editor
+vi .zshrc      -> open file .zshrc on vi editor
+:wq                  -> save and exit vim file editor
+touch <file>    ->  creat new file
+cat <file>        -> show file contents
+ifconfig -l
+
+echo 'export PATH="/usr/local/opt/ruby/bin:$PATH"' >> ~/.zshrc
+***************************************************
+1- install from site git-scm.com
+2- 	cd /tmp
+	mkdir project
+	cd project
+	git init
+	ls -ltrha   or  ls -la
+
+	git add <file>
+	git commit -m’ add comment here’
+	git status
+	git log
+
+	git diff head
+	git diff —staged	
+	git reset <file>         -> unstage file
+	git restore <file>             -> discard everything modified to file 
+	git rm <file>              -> remove file from git and file system
+	git checkout — <file>    ->   reset file to last commit 
+
+	git branch				-> list all branches
+	git branch branchName      -> creat branch
+	git chekout branchName	-> switch branch
+	git switch branchName	-> switch branch
+	git branch -d branchName	-> delete branch
+	git merge branchName
+
+	git clone https://github.com/jadijadi/titap_mystry.git
+	git push origin master
+	git pull origin master
+
+	git remote add origin <url>        ->  instead of clone
+	git remote -v
+	git push -u origin master
+	
+	git show <commit ID>   		-> show details of commit
+	git tag
+	git tag -a v2.0 -m’first version with tag’
+        git tag -a v1.8 <commit ID> -m’first version with tag’
+	git tag -l ‘v*’					-> select tags where start with v
+	git show v1.8
+	git push origin tag v1.8
+	git push origin —tags
+	git checkout v1.8
+***************************************************
+.htaccess
+***************************************************
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /index.html [L]
+***************************************************
+web.config
+***************************************************
+<!--web.config url rewrite-->
+<configuration> 
+  <system.webServer>
+      <rewrite>
+          <rules>
+              <rule name="Redirect To Index" stopProcessing="true">
+                  <match url=".*" />
+                  <conditions>
+                      <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
+                      <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+                  </conditions>
+                  <action type="Rewrite" url="/index.html" />
+              </rule>
+          </rules>
+      </rewrite>
+  </system.webServer>
+</configuration>
+
+
+
+
+
+
+
+  
