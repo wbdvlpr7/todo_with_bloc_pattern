@@ -46,7 +46,7 @@ class HiveDb implements LocalStorage {
         id: id,
         title: todo.title,
         description: todo.description,
-        tags: id.toString(),
+        tags: todo.tags,
         isCompleted: todo.isCompleted));
   }
 
